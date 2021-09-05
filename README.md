@@ -2,6 +2,13 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## 3rd Party
+
+- ESLint[https://eslint.org/]
+  - Install [https://eslint.org/docs/user-guide/getting-started]
+- Prettier[https://prettier.io/]
+  - Install [https://prettier.io/docs/en/install.html]
+
 ## Available Scripts
 
 In the project directory, you can run:
