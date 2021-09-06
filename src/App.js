@@ -11,21 +11,19 @@ function App() {
   const pref_data = GetPrefecture();
   const pref_names = pref_data.map((v) => {
     return (
-      <p key={`pref_${v.prefCode}`}>
-        <label htmlFor={v.prefCode}>
-          <input
-            type="checkbox"
-            id={v.prefCode}
-            onClick={() => {
-              let update_check = { ...check };
-              update_check[v.prefCode] = !update_check[v.prefCode];
-              setchecked_num(v.prefCode);
-              setcheck(update_check);
-            }}
-          />
-          {v.prefName}
-        </label>
-      </p>
+      <label key={`pref_${v.prefCode}`} htmlFor={v.prefCode}>
+        <input
+          type="checkbox"
+          id={v.prefCode}
+          onClick={() => {
+            let update_check = { ...check };
+            update_check[v.prefCode] = !update_check[v.prefCode];
+            setchecked_num(v.prefCode);
+            setcheck(update_check);
+          }}
+        />
+        {v.prefName}
+      </label>
     );
   });
 
@@ -40,7 +38,7 @@ function App() {
   return (
     <div className="App">
       <h1>総人口推移グラフ</h1>
-      <div>{pref_names}</div>
+      <div id="prefecture">{pref_names}</div>
       <Graph props={plot_data} />
     </div>
   );

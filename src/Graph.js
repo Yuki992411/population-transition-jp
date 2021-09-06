@@ -1,4 +1,5 @@
 import React from "react";
+import "./Graph.css";
 import Highcharts from "highcharts";
 import HighchartsReact from "highcharts-react-official";
 
@@ -50,9 +51,9 @@ function Graph(props) {
   };
 
   return (
-    <>
+    <div id="graph">
       <HighchartsReact highcharts={Highcharts} options={options} />
-    </>
+    </div>
   );
 }
 
