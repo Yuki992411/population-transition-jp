@@ -15,7 +15,7 @@ function ApiHandler(url = "", method = "GET") {
       .then((res_json) => {
         setdata(res_json);
       });
-  }, []);
+  }, [url]);
 
   return data;
 }
