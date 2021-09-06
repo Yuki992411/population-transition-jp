@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import "./App.css";
 import GetPrefecture from "./GetPrefecture";
+import GetPopulation from "./GetPopulation";
 
 function App() {
+  const [checked_num, setchecked_num] = useState(0);
   const [check, setcheck] = useState([]);
 
   const pref_names = GetPrefecture().map((v) => {
@@ -15,6 +17,7 @@ function App() {
             onClick={() => {
               let update_check = { ...check };
               update_check[v.prefCode] = !update_check[v.prefCode];
+              setchecked_num(v.prefCode);
               setcheck(update_check);
             }}
           />
@@ -23,6 +26,10 @@ function App() {
       </p>
     );
   });
+
+  const population_data = GetPopulation(check[checked_num] ? checked_num : 0);
+  console.log(population_data);
+  console.log(check);
 
   return (
     <div className="App">
