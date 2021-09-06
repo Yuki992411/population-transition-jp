@@ -9,6 +9,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - Prettier[https://prettier.io/]
   - Install [https://prettier.io/docs/en/install.html]
 - highcharts-react[https://github.com/highcharts/highcharts-react]
+- gh-pages
 
 ## Available Scripts
 
