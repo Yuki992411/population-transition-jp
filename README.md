@@ -8,6 +8,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
   - Install [https://eslint.org/docs/user-guide/getting-started]
 - Prettier[https://prettier.io/]
   - Install [https://prettier.io/docs/en/install.html]
+- highcharts-react[https://github.com/highcharts/highcharts-react]
 
 ## Available Scripts
 
